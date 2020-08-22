@@ -22,3 +22,10 @@
       </tr>
   </tbody>
 </table>
+
+
+<ul *ngFor="let item of filterData | callback: filterUser">
+  <li>{{item.firstName}}</li>
+  <li>{{item.lastName}}</li>
+  <li>{{item.address}}</li>
+</ul>

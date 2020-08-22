@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyFilterPipe } from './shared/pipes/my-filter.pipe';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,9 @@ export class AppComponent {
   title = 'ng2-search-filter-demo';
 
   term: string;
+
+  //  filterargs = {firstName: 'Gavin'};
+  
 
   filterData = [
     {
@@ -37,6 +41,10 @@ export class AppComponent {
       address: '16288 Reichel Harbor'
     }
   ]
+
+  filterUser(user: any) {
+    return user.firstName === "Gavin" || user.firstName === "Lizzie";
+  }
 }
 
 
