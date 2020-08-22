@@ -11,9 +11,6 @@ export class AppComponent {
 
   term: string;
 
-  //  filterargs = {firstName: 'Gavin'};
-  
-
   filterData = [
     {
       firstName: 'Celestine',
